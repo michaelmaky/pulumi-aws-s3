@@ -1,0 +1,22 @@
+{
+    "name": "pulumi-aws-s3",
+    "main": "index.ts",
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "i": "yarn install --frozen-lockfile",
+        "up": "pulumi up",
+        "up:socloudtech": "pulumi config set aws:profile socloudtech && pulumi up",
+        "destroy": "pulumi destroy",
+        "destroy:socloudtech": "pulumi config set aws:profile socloudtech && pulumi destroy"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^4.0.0",
+        "@pulumi/awsx": "^0.30.0",
+        "@pulumi/pulumi": "^3.0.0",
+        "dotenv": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^10.0.0"
+    }
+}
