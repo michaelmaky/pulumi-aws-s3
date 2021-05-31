@@ -1,22 +1,29 @@
 {
-    "name": "pulumi-aws-s3",
-    "main": "index.ts",
-    "private": true,
-    "license": "MIT",
-    "scripts": {
-        "i": "yarn install --frozen-lockfile",
-        "up": "pulumi up",
-        "up:socloudtech": "pulumi config set aws:profile socloudtech && pulumi up",
-        "destroy": "pulumi destroy",
-        "destroy:socloudtech": "pulumi config set aws:profile socloudtech && pulumi destroy"
-    },
-    "dependencies": {
-        "@pulumi/aws": "^4.0.0",
-        "@pulumi/awsx": "^0.30.0",
-        "@pulumi/pulumi": "^3.0.0",
-        "dotenv": "^10.0.0"
-    },
-    "devDependencies": {
-        "@types/node": "^10.0.0"
-    }
+  "name": "pulumi-aws-s3",
+  "main": "index.ts",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "i": "yarn install --frozen-lockfile",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "up": "pulumi up",
+    "up:socloudtech": "pulumi config set aws:profile socloudtech && pulumi up",
+    "destroy": "pulumi destroy",
+    "destroy:socloudtech": "pulumi config set aws:profile socloudtech && pulumi destroy"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^4.0.0",
+    "@pulumi/awsx": "^0.30.0",
+    "@pulumi/pulumi": "^3.0.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.3.0"
+  }
 }
